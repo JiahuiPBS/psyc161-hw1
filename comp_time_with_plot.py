@@ -2,11 +2,14 @@
 
 import time
 
+
 def factorial_recursive(n):
         if n == 0:
             return 1
         else:
             return n * factorial_recursive(n-1)
+
+
 def factorial_nonrecursive(n):
         if n == 0:
             result = 1
@@ -17,8 +20,8 @@ def factorial_nonrecursive(n):
                 result *= i
                 i += 1
         return result
-        
-        
+
+
 def comp_time(m):
     startf = time.clock()
     i = 1
@@ -37,6 +40,7 @@ def comp_time(m):
     ratio = elapsedf/elapsedfn
     return ratio
 
+
 if __name__ == '__main__':
     # This is a way to determine either file was "executed", so if it was
     # imported (by e.g. nose) as a library, we should not run code
@@ -50,4 +54,3 @@ if __name__ == '__main__':
         tratios.append(tratio)
     pl.plot(ns, tratios)
     pl.show()
-

@@ -2,6 +2,7 @@
 
 from nose.tools import assert_equal
 
+
 def factorial_nonrecursive(n):
     if n == 0:
         result = 1
@@ -13,11 +14,13 @@ def factorial_nonrecursive(n):
             i += 1
     return result
 
+
 def test_factorial():
     assert_equal(factorial_nonrecursive(1), 1)
     assert_equal(factorial_nonrecursive(0), 1)
     assert_equal(factorial_nonrecursive(5), 120)
     # TODO: add more
+
 
 if __name__ == '__main__':
     # This is a way to determine either file was "executed", so if it was

@@ -6,18 +6,21 @@ Note:  this is just a skeleton for you to work with.  But it already
 
 from nose.tools import assert_equal
 
+
 def factorial_recursive(n):
     # TODO Define your logic for factorial here
     if n == 0:
         return 1
     else:
-	return n * factorial_recursive(n-1)
+        return n * factorial_recursive(n-1)
+
 
 def test_factorial():
     assert_equal(factorial_recursive(1), 1)
     # TODO: add more
     assert_equal(factorial_recursive(0), 1)
     assert_equal(factorial_recursive(5), 120)
+
 
 if __name__ == '__main__':
     # This is a way to determine either file was "executed", so if it was
