@@ -25,5 +25,5 @@ if __name__ == '__main__':
     # below
 
     nconditions = raw_input("Please enter number of conditions: ")
-    norders = factorial_recursive(nconditions)
+    norders = factorial_recursive(int(nconditions))
     print("Number of possible trial orders: " + str(norders))
