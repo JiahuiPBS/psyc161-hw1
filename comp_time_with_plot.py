@@ -22,14 +22,14 @@ def factorial_nonrecursive(n):
 def comp_time(m):
     startf = time.clock()
     i = 1
-    while i < 10000:
+    while i < 10001:
         factorial_recursive(m)
         i += 1
     elapsedf = time.clock() - startf
 
     startfn = time.clock()
     j = 1
-    while j < 10000:
+    while j < 10001:
         factorial_nonrecursive(m)
         j += 1
     elapsedfn = time.clock() - startfn
@@ -50,3 +50,4 @@ if __name__ == '__main__':
         tratios.append(tratio)
     pl.plot(ns, tratios)
     pl.show()
+
